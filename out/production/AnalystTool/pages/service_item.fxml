@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" stylesheets="@../resources/css/menu" styleClass="menu_item_background" spacing="10">
+    <Button fx:id="serviceButton" styleClass="menu_item_selected" alignment="CENTER" minWidth="250"/>
+</VBox>

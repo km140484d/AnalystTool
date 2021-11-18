@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://www.w3.org/1999/XSL/Transform" stylesheets="@../resources/css/base"
+            fx:controller="controllers.MainServicesController" styleClass="menu_background">
+    <center>
+        <GridPane fx:id="serviceTable" hgap="20" vgap="20" alignment="CENTER" styleClass="menu_item_background">
+        </GridPane>
+    </center>
+</BorderPane>

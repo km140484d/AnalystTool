@@ -1,0 +1,110 @@
+.scene{
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 20, 5, 10, 5;
+}
+
+.panel{
+    -fx-background-color: #F0F0F0;
+    -fx-fill-width: false;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);
+    -fx-padding: 15;
+}
+
+.title{
+    -fx-font-family: Broadway;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.subtitle{
+    -fx-font-family: Comic Sans MS;
+    -fx-font-size: 16;
+    -fx-font-style: italic;
+    -fx-underline: true;
+    -fx-padding: 10, 5, 5, 5;
+}
+
+.label_field{
+    -fx-font-family: Comic Sans MS;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.label_status{
+    -fx-font-style: italic;
+    -fx-text-fill: #191970;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.button_base {
+    -fx-background-color: #191970;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-font-family: Comic Sans MS;
+    -fx-text-alignment: right;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-label-padding: 2;
+}
+
+.button_result {
+    -fx-background-color: #CCCCCC;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-font-family: Comic Sans MS;
+    -fx-text-alignment: right;
+    -fx-font-weight: bold;
+    -fx-label-padding: 2;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5;
+}
+
+.text_field_image{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-font-size: 12;
+}
+
+.bordered-titled-title {
+  -fx-background-color: #F0F0F0;
+  -fx-translate-y: -10;
+  -fx-font-family: Comic Sans MS;
+  -fx-font-weight: bold;
+  -fx-font-size: 13;
+}
+
+.bordered-titled-border {
+  -fx-content-display: top;
+  -fx-border-insets: 20 15 15 15;
+  -fx-background-color: #F0F0F0;
+  -fx-border-color: grey;
+  -fx-border-width: 0.5;
+  -fx-fill-width: true;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);
+}
+
+.bordered-titled-content {
+  -fx-padding: 26 10 10 10;
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scroll-pane {
+   -fx-background-color: transparent;
+}
+
+.table-column {
+  -fx-alignment: CENTER;
+  -fx-font-family: Comic Sans MS;
+  -fx-font-size: 13;
+}
+
+.empty-field{
+  -fx-text-box-border: red ;
+  -fx-focus-color: red ;
+  -fx-outer-border: red;
+  -fx-inner-border: red;
+}

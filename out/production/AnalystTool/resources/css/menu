@@ -1,0 +1,28 @@
+.menu_background{
+    -fx-background-color: #E0E0E0;
+    -fx-padding: 20, 5, 10, 5;
+}
+
+.menu_item_background {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #B0C4DE;
+    -fx-padding: 10;
+}
+
+.menu_item {
+    -fx-background-color: #4682B4;
+    -fx-text-fill: #E0E0E0;
+    -fx-font-size: 20px;
+    -fx-font-family: Impact, Charcoal, sans-serif;
+    -fx-padding: 10;
+}
+
+.menu_item_selected {
+    -fx-background-color: #191970;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 26px;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+    -fx-font-family: Impact, Charcoal, sans-serif;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://www.w3.org/1999/XSL/Transform" stylesheets="@../../resources/css/base"
+            fx:controller="controllers.services.Concatenator" styleClass="menu_background">
+    <center>
+        <VBox fx:id="concatinationBox" spacing="30" maxWidth="Infinity" alignment="CENTER" styleClass="menu_item_background">
+            <Button fx:id="titleConcatinateButton" text="Concatinate Files" styleClass="menu_item_selected" minWidth="250"/>
+            <GridPane fx:id="inputFileChooserPane"  hgap="5" vgap="15" alignment="CENTER">
+                <Label text="Input directory:"  GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="label_field"/>
+                <Label text="Output directory:" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="label_field"/>
+                <Label text="Output file name:" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="label_field"/>
+                <Label fx:id="executionStatusLabel" GridPane.columnIndex="0" GridPane.rowIndex="3" styleClass="label_status"/>
+                <TextField fx:id="inputDirectoryText" GridPane.columnIndex="1" GridPane.rowIndex="0" minWidth="500"/>
+                <TextField fx:id="outputDirectoryText" GridPane.columnIndex="1" GridPane.rowIndex="1" minWidth="500"/>
+                <TextField fx:id="outputFileNameText" GridPane.columnIndex="1" GridPane.rowIndex="2" minWidth="500"/>
+                <Button fx:id="inputDirectoryChooserButton" GridPane.columnIndex="2" GridPane.rowIndex="0" onAction="#openInputDirectoryChooser"
+                        style="-fx-graphic: url('/resources/images/attachment16.png'); -fx-background-color: #4682B4"/>
+                <Button fx:id="outputDirectoryChooserButton" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#openOutputDirectoryChooser"
+                        style="-fx-graphic: url('/resources/images/attachment16.png');-fx-background-color: #4682B4"/>
+            </GridPane>
+            <HBox spacing="25" alignment="CENTER" styleClass="menu_item_background">
+                <Button fx:id="concatinationButton" text="Concatenate" onAction="#executeFileConcatenation" styleClass="menu_item" minWidth="200"/>
+                <Button fx:id="homeButton" text="Return" onAction="#goBackHome" styleClass="menu_item"
+                        style="-fx-graphic: url('/resources/images/home20.png'); -fx-graphic-text-gap: 10;" minWidth="200"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
